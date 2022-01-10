@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4.html</title>   
+    <link rel="stylesheet" href="style.css" />
+    <script src="checkpassword.js" ></script>
+</head>
+<body>
+    <h3>(1)Please click on the button and find Who is right?<h3>
+    <div >
+        <button class="button1" onclick="displayResult(1)" >Person A</button>  
+        <P id="A" width:40%></P>
+    
+         <button class="button2" onclick="displayResult(0)">Person B</button>
+  
+       <script>
+       function displayResult(m)
+       {
+         if(m==1)
+           document.getElementById("A").innerHTML="I'm right"
+         else
+           document.getElementById("A").innerHTML="No,I'm right"
+       }
+       </script>
+   </div>
+   <h3>(2)Please hover over the element and find what would happen.</h3>
+   <div>
+   <button class="button3"  onmouseover="warning()">Don't hove over me</button>
+   <script>
+    function warning()
+    {
+      alert("Hey, I told you not to hover over me!")
+    }
+   </script>
+   </div>
+   <h3>(3)&(4)Please type in username/email/password,then click submit.</h3>
+   <h1 id="update">Please login.</h1>
+   <div>
+      <form>
+         <label for="name">Username:</label><br>
+         <input type="text" id="username" name="username" ><br>
+         <label for="eAddress">Email Address:</label><br>
+         <input type="text" id="emailaddress" name="email" ><br>
+         <label for="pword">Password:</label><br>
+         <input type="text" id="password" name="password" ><br><br>
+         <input type="submit" onclick="checkPassword()" value="Submit">
+      </form> 
+    </div>
+   
+</body>
+</html>

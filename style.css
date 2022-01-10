@@ -1,0 +1,22 @@
+div{
+    display:flex;
+    justify-content: center
+}
+h1{
+    color:blue;
+    text-align:center
+}
+.button1{
+    background-color:yellow
+}
+.button2{
+    background-color:rgb(93, 233, 93)
+}
+.button3{
+    color:black;
+    background-color:red;
+    border:none;
+    text-align: center;
+    padding: 32px 32px;
+    font-size:32px
+}
